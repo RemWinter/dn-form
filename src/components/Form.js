@@ -144,7 +144,7 @@ const FormNew = () => {
         obj.isValid = false;
       }
   
-      else if (field.name ==='name' && !/^[a-z][a-z\s]*$/.test(field.value)) {
+      else if (field.name ==='name' && !/^[A-Za-z][a-z\s]*$/.test(field.value)) {
         field.parentElement.classList.add('error');
         field.parentElement.classList.remove('valid');
         field.nextElementSibling.innerHTML = `Enter a valid Name`;
